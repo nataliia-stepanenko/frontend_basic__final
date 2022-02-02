@@ -600,10 +600,13 @@ h4 {
 	border-radius: 8px;
 	margin-bottom: 25px;
 	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
 
 .portfolio__img_first {
-	background: url(../img/04.jpeg) right center/cover no-repeat;
+	justify-content: flex-end;
 }
 
 .portfolio__img_first:after {
@@ -620,10 +623,6 @@ h4 {
 	bottom: 0;
 }
 
-.portfolio__img_second {
-	background: url(../img/05.jpg) center/cover no-repeat;
-}
-
 .portfolio__img_second:after {
 	content: '02';
 	position: absolute;
@@ -638,10 +637,6 @@ h4 {
 	bottom: 0;
 }
 
-.portfolio__img_third {
-	background: url(../img/06.jpg) center/cover no-repeat;
-}
-
 .portfolio__img_third:after {
 	content: '03';
 	position: absolute;
@@ -654,10 +649,6 @@ h4 {
 	background-color: var(--green);
 	left: 0;
 	bottom: 0;
-}
-
-.portfolio__img_fourth {
-	background: url(../img/07.jpg) center/cover no-repeat;
 }
 
 .portfolio__img_fourth:after {
@@ -959,18 +950,27 @@ h4 {
 	width: 338px;
 	border-radius: 8px 8px 50px 8px;
 	margin-bottom: 25px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
 
 .carousel_image_one {
-	background: url(../img/faces/01.png) top center/cover no-repeat #E7F3ED;
+	align-items: flex-start;
+	background: #E7F3ED;
 }
 
 .carousel_image_two {
-	background: url(../img/faces/02.png) 65% bottom/cover no-repeat #F9E3E1;
+	background: #F9E3E1;
 }
 
 .carousel_image_three {
-	background: url(../img/faces/03.png) right bottom/105% no-repeat #FBF6E3;
+	align-items: center;
+	background: #FBF6E3;
+}
+
+.carousel_image_three img {
+	height: 120%;
 }
 
 .team__carousel_card h4 {
@@ -1351,7 +1351,9 @@ h5 {
 	width: 554px;
 	height: 336px;
 	border-radius: 8px 8px 50px 8px;
-	background: url(../img/10.jpg) center/auto 100% no-repeat;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
 
 .big-card__text {
@@ -1367,6 +1369,7 @@ h5 {
 .text_big {
 	font-size: 20px;
 	line-height: 32px;
+	color: var(--black);
 }
 
 .blog__small-cards {
@@ -1390,25 +1393,18 @@ h5 {
 	box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
 }
 
-.small-card__img-one,
-.small-card__img-two,
-.small-card__img-three {
-	width: 100%;
-	height: 63%;
+.small-card__img {
+	width: 338px;
+	height: 240px;
 	border-radius: 8px 8px 50px 8px;
 	margin-bottom: 25px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
 
-.small-card__img-one {
-	background: url(../img/11.jpg) center/contain no-repeat;
-}
-
-.small-card__img-two {
-	background: url(../img/12.jpg) center/auto 100% no-repeat;
-}
-
-.small-card__img-three {
-	background: url(../img/13.png) center/auto 100% no-repeat;
+.small-card__img img {
+	height: 100%;
 }
 
 .blog__small-card h6 {

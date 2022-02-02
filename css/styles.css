@@ -48,6 +48,7 @@ h1,h2,h3,h4,h5,h6 {
 	display: flex;
 	align-items: center;
 	column-gap: 32px;
+	z-index: 1;
 }
 
 .logo {
@@ -91,7 +92,6 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 8px 10px;
 }
 
-
 .nav__list > li:hover .nav__link {
 	color: var(--green);
 }
@@ -126,6 +126,7 @@ h1,h2,h3,h4,h5,h6 {
 	border-radius: 6px;
 	cursor: pointer;
 	letter-spacing: 1px;
+	z-index: 1;
 }
 
 .btn-outline {
@@ -138,6 +139,7 @@ h1,h2,h3,h4,h5,h6 {
 	border: none;
 	transform: scale(1.03);
 }
+
 /*______________________________ Company __________________________________*/
 main {
 	position: relative;

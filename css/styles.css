@@ -444,8 +444,6 @@ h4 {
 
 .features__wrapper {
 	min-height: 933px;
-	padding-bottom: 81px;
-	display: flex;
 	gap: 30px;
 	padding-bottom: 48px;
 }
@@ -1775,5 +1773,70 @@ h5 {
 		box-shadow: none;
 	}
 	/*_______________Features______________*/
+	
+	#features {
+		min-height: 1040px;
+	}
 
+	.features__wrapper {
+		min-height: 1040px;
+		padding-bottom: 155px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 0;
+	}
+
+	.features__text {
+		flex-basis: 329px;
+		min-height: 469px;
+		padding-top: 0;
+		margin-bottom: 78px;
+	}
+
+	.features__heading {
+		margin-bottom: 15px;
+	}
+
+	.features__text p {
+		margin-bottom: 13px;
+	}
+
+	.features__card {
+		padding-bottom: 20px;
+	}
+
+	.features__img {
+		flex-basis: 265px;
+		width: 265px;
+		height: 290px;
+		margin: 0 17px 29px 47px;
+	}
+
+	.features__img:before {
+		width: 99px;
+		height: 240px;
+	}
+
+	.features__img:after {
+		width: 100px;
+		height: 52px;
+		background: url(../img/graph-wave.png) center/100px 52px no-repeat;
+		background-color: #fff;
+		padding: 14px 12px 12px 12px;
+	}
+
+	.features__img__repeat:before {
+		width: 125px;
+		height: 77px;
+	}
+
+	.features__img__repeat:after {
+		font-size: 30px;
+		padding: 14px;
+	}
+
+	/*_______________Portfolio______________*/
+
+	
 }

@@ -574,6 +574,7 @@ h4 {
 
 .portfolio__wrapper-cards {
 	min-height: 1003px;
+	flex-wrap: wrap;
 	gap: 30px;
 	margin-bottom: 69px;
 }

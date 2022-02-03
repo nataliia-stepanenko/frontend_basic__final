@@ -10,7 +10,7 @@ $('.team__carousel').slick({
   autoplaySpeed: 3000,
    responsive: [
     {
-      breakpoint: 380,
+      breakpoint: 1080,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1

@@ -2079,4 +2079,85 @@ h5 {
 
 	/*_______________Testimonials______________*/
 
+	#testimonials {
+		min-height: 1104px;
+	}
+
+	.testimonials__wrapper {
+		max-width: 329px;
+		min-height: 1104px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.testimonials__image {
+		height: 258px;
+		flex-basis: 299px;
+		width: 299px;
+		margin: 0 0 57px 29px;
+	}
+
+	.testimonials__image:after {
+		font-size: 28px;
+		padding: 13px 17px 13px 13px;
+	}
+
+	.testimonials__text {
+		max-height: 405px;
+		flex-basis: 329px;
+		max-width: 329px;
+	}
+
+	.testimonials__heading {
+		margin-bottom: 20px;
+		padding-top: 0;
+		min-height: 97px;
+	}
+
+	.testimonials__card {
+		min-height: 288px;
+		padding: 27px 46px 25px 32px;
+	}
+
+	.testimonials__card p {
+		max-width: 251px;
+	}
+
+	.testimonials__card__name {
+		margin-bottom: 0;
+	}
+
+	.one-time .slick-prev, 
+	.one-time .slick-next {
+		top: 360px;
+	}
+
+	.one-time .slick-prev
+	{
+	    left: 34%;
+	}
+	[dir='rtl'] .one-time .slick-prev
+	{
+	    right: 66%;
+	}
+
+	.one-time .slick-next
+	{
+	    right: 34%;
+	}
+	[dir='rtl'] .one-time .slick-next
+	{
+	    left: 66%;
+	}
+	
+	.one-time .slick-prev:hover:before,
+	[dir='rtl'] .one-time .slick-prev:hover:before,
+	.one-time .slick-next:hover:before,
+	[dir='rtl'] .one-time .slick-next:hover:before {
+		opacity: 1;
+	}
+
+	/*_______________Contact______________*/
+
 }

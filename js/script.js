@@ -8,6 +8,15 @@ $('.team__carousel').slick({
   arrows: false,
   autoplay: true,
   autoplaySpeed: 3000,
+   responsive: [
+    {
+      breakpoint: 375,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]
 });
 
 //  Carousel for testimonials

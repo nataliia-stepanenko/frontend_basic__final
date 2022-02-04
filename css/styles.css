@@ -1740,6 +1740,38 @@ h5 {
 		color: #fff;
 	}
 
+	.nav__list > li:hover .sub-nav__list {
+		display: none;
+	}
+
+	.nav__list > li:focus .sub-nav__list {
+	display: block;
+	}
+
+	.nav__list > li:hover .nav__link:after {
+		width: 0;
+		height: 0;
+	}
+
+	/*-----------Active------------*/
+
+	.dropdown-about.active + .sub-nav__list {
+		display: block;
+		margin-left: 80px;
+		top: 0;
+	}
+
+	.dropdown-service.active + .sub-nav__list {
+		display: block;
+		margin-left: 80px;
+		top: 0;
+	}
+
+	.nav__link.active + .sub-nav__list a {
+		color: var(--green);
+	}
+
+
 	/*_______________Company______________*/
 
 	#company {

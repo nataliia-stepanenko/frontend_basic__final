@@ -19,6 +19,7 @@ $('.team__carousel').slick({
     ]
 });
 
+
 //  Carousel for testimonials
 
 $('.one-time').slick({
@@ -31,7 +32,8 @@ $('.one-time').slick({
   autoplay: true,
 });
 
-//  Go to top
+
+//  Go-to-top button
 
 $(document).ready(function() {
       // Show or hide the sticky footer button
@@ -51,6 +53,7 @@ $(document).ready(function() {
       })
     });
 
+
 // Burger
 
     let burger = document.querySelector("#burger");
@@ -58,3 +61,19 @@ $(document).ready(function() {
     burger.onclick = function() {
         header.classList.toggle("menu-open");
     }
+
+
+// Sub-nav__list on click in mobile version
+
+    $(document).ready(function() {
+      $('.dropdown-about').click(function(event) {
+          $('.dropdown-about').toggleClass('active');
+      });
+    });
+
+
+        $(document).ready(function() {
+      $('.dropdown-service').click(function(event) {
+          $('.dropdown-service').toggleClass('active');
+      });
+    });

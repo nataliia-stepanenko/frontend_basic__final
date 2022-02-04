@@ -1641,9 +1641,10 @@ h5 {
 		display: block;
 		height: 48px;
 		width: 48px;
+		padding: 15px 13px;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		border: none;
 		background: var(--red);
@@ -1661,14 +1662,8 @@ h5 {
 		height: 2px;
 		border-radius: 2px;
 		background-color: #fff;
-		z-index: 99;
+		z-index: 1;
 	}
-
-	.burger_layer {
-		margin-top: 6px;
-		margin-bottom: 6px;
-	}
-
 
 	.header_button {
 		display: none;
@@ -1701,6 +1696,27 @@ h5 {
 		position: absolute;
 		top: 0;
 		right: 0;
+		justify-content: center;
+	}
+
+	.menu-open .burger_layer,
+	.menu-open .burger:before,
+	.menu-open .burger:after {
+		position: relative;
+		transition: all 0.3s;
+		transform-origin: center;
+	}
+
+	.menu-open .burger:before {
+		transform: rotate(42deg);
+	}
+
+	.menu-open .burger:after {
+		transform: rotate(-42deg);
+	}
+
+	.menu-open .burger_layer {
+		background: transparent;
 	}
 
 	.menu-open .menu {

@@ -58,10 +58,3 @@ $(document).ready(function() {
     burger.onclick = function() {
         header.classList.toggle("menu-open");
     }
-
-
- let nav__link = document.querySelector("#nav__link");
-    let sub_nav__list = document.querySelector("#sub-nav__list");
-    nav__link.onclick = function() {
-        sub_nav__list.classList.toggle("menu-open");
-    }

@@ -118,6 +118,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 }
 
+.nav__list > li:focus .nav__link {
+	color: var(--green);
+}
+
+.sub-nav__list > li:focus .sub-nav__link {
+	color: var(--green);
+}
+
 .burger {
 	display: none;
 }
@@ -148,6 +156,12 @@ h1,h2,h3,h4,h5,h6 {
 	border: none;
 	transform: scale(1.03);
 }
+}
+
+.btn-outline:focus {
+	box-shadow: 0 0 10px #F0756635;
+	border: none;
+	transform: scale(1.03);
 }
 
 /*______________________________ Company __________________________________*/
@@ -239,6 +253,11 @@ h1:after {
 	box-shadow: 0 0 10px #33333345;
 	transform: scale(1.03);
 }
+}
+
+.btn-red:focus {
+	box-shadow: 0 0 10px #33333345;
+	transform: scale(1.03);
 }
 
 .company__img {
@@ -439,6 +458,10 @@ h4 {
 }
 }
 
+.about__card:focus {
+	box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
+}
+
 .about__card svg {
 	margin-bottom: 89px;
 }
@@ -606,6 +629,10 @@ h4 {
 .portfolio__card:hover {
 	box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
 }
+}
+
+.portfolio__card:focus {
+	box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
 }
 
 .portfolio__img {
@@ -962,6 +989,10 @@ h4 {
 }
 }
 
+.team__carousel_card:focus {
+	box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
+}
+
 .carousel_image_one,
 .carousel_image_two,
 .carousel_image_three {
@@ -1202,16 +1233,22 @@ h4 {
     opacity: 1;
 }
 
+@media (hover: hover) {
 .one-time .slick-prev:hover:before,
-.one-time .slick-prev:focus:before,
 [dir='rtl'] .one-time .slick-prev:hover:before,
-[dir='rtl'] .one-time .slick-prev:focus:before,
 .one-time .slick-next:hover:before,
+[dir='rtl'] .one-time .slick-next:hover:before {
+	opacity: .75;
+}
+}
+
+.one-time .slick-prev:focus:before,
+[dir='rtl'] .one-time .slick-prev:focus:before,
 .one-time .slick-next:focus:before,
-[dir='rtl'] .one-time .slick-next:hover:before,
 [dir='rtl'] .one-time .slick-next:focus:before {
 	opacity: .75;
 }
+
 
 /*.one-time button {
 	text-align: start;
@@ -1266,7 +1303,13 @@ h4 {
 	border: none;
 }
 
+@media (hover: hover) {
 .contact__heading button:hover {
+	box-shadow: 0 0 10px #FBD34B;
+}
+}
+
+.contact__heading button:focus {
 	box-shadow: 0 0 10px #FBD34B;
 }
 
@@ -1359,7 +1402,14 @@ h5 {
 	margin-bottom: 32px;
 }
 
+@media (hover: hover) {
 .blog__big-card:hover {
+	border: none;
+	box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
+}
+}
+
+.blog__big-card:focus {
 	border: none;
 	box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
 }
@@ -1406,7 +1456,14 @@ h5 {
 	border-radius: 8px;
 }
 
+@media (hover: hover) {
 .blog__small-card:hover {
+	border: none;
+	box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
+}
+}
+
+.blog__small-card:focus {
 	border: none;
 	box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
 }
@@ -1509,6 +1566,16 @@ h5 {
 	color: #fff;
 }
 
+@media (hover: hover) {}
+.footer__column a:hover {
+	color: var(--green);
+}
+}
+
+.footer__column a:focus {
+	color: var(--green);
+}
+
 .footer__icons {
 	display: flex;
 	column-gap: 8px;
@@ -1564,11 +1631,6 @@ h5 {
 
 	.logo {
 		z-index: 1;
-	}
-
-	.logo:hover {
-		text-shadow: none;
-		transform: none;
 	}
 
 	.nav {
@@ -1739,11 +1801,6 @@ h5 {
 		border: none;
 	}
 
-	.btn-red:hover {
-		box-shadow: none;
-		transform: none;
-	}
-
 	/*_______________About______________*/
 	
 	#about {
@@ -1836,10 +1893,6 @@ h5 {
 		gap: 32px;
 	}
 
-	.about__card:hover {
-		box-shadow: none;
-	}
-
 	/*_______________Features______________*/
 	
 	#features {
@@ -1930,10 +1983,6 @@ h5 {
 		flex-basis: 329px;
 		width: 329px;
 		max-height: 315px;
-	}
-
-	.portfolio__card:hover {
-		box-shadow: none;
 	}
 
 	.portfolio__img {
@@ -2114,10 +2163,6 @@ h5 {
 		box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
 	}*/
 
-	.team__carousel_card:hover {
-		box-shadow: none;
-	}
-
 	.carousel_image_one,
 	.carousel_image_two,
 	.carousel_image_three {
@@ -2214,13 +2259,6 @@ h5 {
 	{
 	    left: 66%;
 	}
-	
-	.one-time .slick-prev:hover:before,
-	[dir='rtl'] .one-time .slick-prev:hover:before,
-	.one-time .slick-next:hover:before,
-	[dir='rtl'] .one-time .slick-next:hover:before {
-		opacity: 1;
-	}
 
 	/*__________________Contact_________________*/
 	#contact {
@@ -2257,10 +2295,6 @@ h5 {
 		margin-bottom: 20px;
 	}
 
-	.contact__heading button:hover {
-		box-shadow: none;
-	}
-
 	.contact__text {
 		flex-basis: 216px;
 		max-width: 216px;
@@ -2288,10 +2322,6 @@ h5 {
 
 	.contact__form__input {
 		margin-bottom: 16px;
-	}
-
-	.contact__form__input:focus {
-		outline: 1px solid var(--green);
 	}
 	
 	/*__________________Blog_________________*/
@@ -2328,11 +2358,6 @@ h5 {
 
 	}
 
-	.blog__big-card:hover {
-		border: 1px solid var(--blue);
-		box-shadow: none;
-	}
-
 	.big-card__img {
 		flex-basis: 296px;
 		width: 296px;
@@ -2361,11 +2386,6 @@ h5 {
 		flex-basis: 352px;
 		min-height: 352px;
 		padding: 16px 17px 39px 16px;
-	}
-
-	.blog__small-card:hover {
-		border: 1px solid var(--blue);
-		box-shadow: none;
 	}
 
 	.small-card__img {

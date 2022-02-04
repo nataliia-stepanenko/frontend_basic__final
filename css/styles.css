@@ -1300,11 +1300,11 @@ h5 {
 }
 /*______________________________ Blog __________________________________*/
 #blog {
-	min-height: 1275px;
+	min-height: 1196px;
 }
 
 .blog__wrapper {
-	min-height: 1275px;
+	min-height: 1196px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1339,7 +1339,6 @@ h5 {
 	border: 1px solid var(--blue);
 	border-radius: 8px;
 	margin-bottom: 32px;
-	position: relative;
 }
 
 .blog__big-card:hover {
@@ -1412,10 +1411,6 @@ h5 {
 	font-size: 24px;
 	line-height: 32px;
 	padding-left: 16px;
-}
-
-.blog-btn {
-	margin-bottom: 49px;
 }
 
 .button-top {
@@ -1531,7 +1526,7 @@ h5 {
 /*________________________________________________________________________*/
 
 @media screen and (max-width: 375px) {
-	.wrappper {
+	.wrapper {
 		max-width: 329px;
 	}
 
@@ -2247,5 +2242,95 @@ h5 {
 	}
 	
 	/*__________________Blog_________________*/
+	#blog {
+		min-height: 2181px;
+	}
+
+	.blog__wrapper {
+		height: 2181px;
+	}
+
+
+	.blog__heading {
+		min-height: 97px;
+		margin-bottom: 15px;
+	}
+
+	.blog__heading > h3 {
+		font-size: 38px;
+	}
+
+	.blog__heading > h3,
+	.blog__wrapper > p {
+		max-width: 329px;
+	}
+
+	.blog__big-card {
+		min-height: 528px;
+		width: 100%;
+		flex-direction: column;
+		padding: 16px 16px 47px 16px;
+		margin-bottom: 16px;
+		gap: 25px;
+
+	}
+
+	.blog__big-card:hover {
+		border: 1px solid var(--blue);
+		box-shadow: none;
+	}
+
+	.big-card__img {
+		flex-basis: 296px;
+		width: 296px;
+		height: 180px;
+	}
+
+	.big-card__text {
+		flex-basis: 296px;
+		width: 296px;
+		margin: 0;
+		min-height: 260px;
+	}
+
+	.big-card__text h5 {
+		margin-bottom: 13px;
+	}
+
+	.blog__small-cards {
+		min-height: 1088px;
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 16px;	
+	}
+
+	.blog__small-card {
+		flex-basis: 352px;
+		min-height: 352px;
+		padding: 16px 17px 39px 16px;
+	}
+
+	.blog__small-card:hover {
+		border: 1px solid var(--blue);
+		box-shadow: none;
+	}
+
+	.small-card__img {
+		width: 296px;
+		height: 210px;
+		margin-bottom: 23px;
+	}
+
+	.blog-btn {
+		margin-bottom: 112px;
+	}
+
+	.button-top {
+		display: none !important;
+	}
+
+	/*__________________Footer_________________*/
+
+	
 
 }

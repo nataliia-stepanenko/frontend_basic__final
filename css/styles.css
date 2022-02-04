@@ -94,6 +94,7 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 8px 10px;
 }
 
+@media (hover: hover) {
 .nav__list > li:hover .nav__link {
 	color: var(--green);
 }
@@ -110,6 +111,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .sub-nav__list > li:hover .sub-nav__link {
 	color: var(--green);
+}
 }
 
 .burger {

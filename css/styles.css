@@ -74,8 +74,10 @@ h1,h2,h3,h4,h5,h6 {
 	position: relative;
 }
 
+@media (hover: hover) {
 .nav__list > li:hover .sub-nav__list {
 	display: block;
+}
 }
 
 .sub-nav__list {
@@ -1537,30 +1539,14 @@ h5 {
 	/*_______________Header______________*/
 
 	.header {
-		min-height: 64px;
-		width: 100%;
-		position: absolute;
-		left: 0;
-		top: 0;
-		padding-top: 16px;
+		width: 375px;
 	}
 
 	.wrapper {
 		max-width: 329px;
 	}
 
-	.menu {
-		display: flex;
-		align-items: center;
-	}
-
 	.logo {
-		font-family: 'Hind Siliguri', sans-serif;
-		font-weight: 700;
-		font-size: 40px;
-		line-height: 48px;
-		text-transform: uppercase;
-		color: var(--black);
 		z-index: 1;
 	}
 
@@ -1608,6 +1594,52 @@ h5 {
 
 	.header_button {
 		display: none;
+	}
+
+	/*-----------Menu-open------------*/
+	.header.menu-open {
+		min-height: 443px;
+		width: 375px;
+		background-color: var(--red);
+		z-index: 1;
+	}
+
+	.menu-open .wrapper {
+		position: relative;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding-top: 90px;
+	}
+
+	.menu-open .logo {
+		color: #fff;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.menu-open .burger {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.menu-open .menu {
+		min-width: 329px;
+		align-items: flex-start;
+	}
+
+	.menu-open .nav {
+		display: block;
+	}
+
+	.menu-open .nav__list {
+		flex-direction: column;
+	}
+
+	.menu-open .nav__link {
+		color: #fff;
 	}
 
 	/*_______________Company______________*/
@@ -1791,6 +1823,7 @@ h5 {
 	.about__card:hover {
 		box-shadow: none;
 	}
+
 	/*_______________Features______________*/
 	
 	#features {

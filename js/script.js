@@ -50,3 +50,11 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, 300);
       })
     });
+
+// Burger
+
+    let burger = document.querySelector("#burger");
+    let header = document.querySelector("#header");
+    burger.onclick = function() {
+        header.classList.toggle("menu-open");
+    }

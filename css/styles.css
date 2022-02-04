@@ -1638,7 +1638,6 @@ h5 {
 	}
 
 	.burger {
-		display: block;
 		height: 48px;
 		width: 48px;
 		padding: 15px 13px;
@@ -1702,21 +1701,26 @@ h5 {
 	.menu-open .burger_layer,
 	.menu-open .burger:before,
 	.menu-open .burger:after {
-		position: relative;
+		position: absolute;
+		width: 26px;
 		transition: all 0.3s;
-		transform-origin: center;
+	}
+
+	.menu-open .burger:before,
+	.menu-open .burger:after {
+		position: absolute;
 	}
 
 	.menu-open .burger:before {
-		transform: rotate(42deg);
+		transform: rotate(45deg);
 	}
 
 	.menu-open .burger:after {
-		transform: rotate(-42deg);
+		transform: rotate(-45deg);
 	}
 
 	.menu-open .burger_layer {
-		background: transparent;
+		display: none;
 	}
 
 	.menu-open .menu {

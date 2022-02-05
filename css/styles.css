@@ -1642,7 +1642,7 @@ h5 {
 
 @media (hover: hover) {
 .footer__icons a:hover {
-	translate: 0px, -5px;
+	transform: scale(0.9) rotate(180deg);}
 	}
 }
 

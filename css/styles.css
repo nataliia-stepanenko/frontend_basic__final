@@ -58,11 +58,14 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: 48px;
 	text-transform: uppercase;
 	color: var(--black);
+	transition: all 0.3s ease-in-out;
 }
 
+@media (hover: hover) {
 .logo:hover {
-	text-shadow: 0 0 10px #33333335;
+	color: var(--green);
 	transform: scale(1.03);
+}
 }
 
 .nav__list {
@@ -96,6 +99,7 @@ h1,h2,h3,h4,h5,h6 {
 .sub-nav__link {
 	color: var(--black);
 	padding: 8px 10px;
+	transition: all 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
@@ -148,6 +152,7 @@ h1,h2,h3,h4,h5,h6 {
 .btn-outline {
 	border: 1px solid #F0756624;
 	background-color: transparent;
+	transition: all 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
@@ -246,6 +251,7 @@ h1:after {
 	background-color: var(--red);
 	color: #fff;
 	border: none;
+	transition: all 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
@@ -450,6 +456,7 @@ h4 {
 	border-radius: 8px;
 	padding: 32px;
 	background-color: #fff;
+	transition: all 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
@@ -623,6 +630,7 @@ h4 {
 	width: 570px;
 	max-height: 498px;
 	border-radius: 8px;
+	transition: all 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
@@ -733,6 +741,20 @@ h4 {
 .portfolio__wrapper-companies a {
 	display: block;
 }
+
+.portfolio__wrapper-companies a:hover {
+	animation: 0.5s ease-in-out shake;
+} 
+
+@keyframes shake {
+	0% {transform: rotate(0deg);}
+	10% {transform: rotate(-3deg);}
+	35% {transform: rotate(10deg);}
+	50% {transform: rotate(-5deg);}
+	75% {transform: rotate(3deg);}
+	100% {transform: rotate(0deg);}
+}
+
 /*______________________________ Service __________________________________*/
 #service {
 	min-height: 736px;
@@ -981,6 +1003,7 @@ h4 {
 	border: 1px solid var(--blue);
 	border-radius: 8px;
 	padding: 16px;
+	transition: all 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
@@ -1193,6 +1216,7 @@ h4 {
     font-size: 20px;
     color: #fff;
     opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 [dir='rtl'] .one-time .slick-prev:before
 {
@@ -1203,6 +1227,7 @@ h4 {
     display: block;
     transform: rotate(180deg);
     opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 .one-time .slick-next
@@ -1223,6 +1248,7 @@ h4 {
     display: block;
     transform: rotate(180deg);
     opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 [dir='rtl'] .one-time .slick-next:before
 {
@@ -1231,6 +1257,7 @@ h4 {
     font-size: 20px;
     color: #fff;
     opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
@@ -1301,6 +1328,7 @@ h4 {
 	width: 170px;
 	height: 48px;
 	border: none;
+	transition: all 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
@@ -1342,6 +1370,7 @@ h5 {
 	padding: 9px 16px 7px 16px;
 	border: 1px solid #DADADA;
 	outline: none;
+	transition: all 0.3s ease-in-out;
 }
 
 .contact__form__input:focus {
@@ -1400,6 +1429,7 @@ h5 {
 	border: 1px solid var(--blue);
 	border-radius: 8px;
 	margin-bottom: 32px;
+	transition: all 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
@@ -1454,6 +1484,7 @@ h5 {
 	padding: 16px;
 	border: 1px solid var(--blue);
 	border-radius: 8px;
+	transition: all 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
@@ -1503,14 +1534,28 @@ h5 {
 	cursor: pointer;
 	margin-bottom: 31px;
 }
-.button-top:before {
+.button-top:after {
 	content: '\e900';
     font-family: 'icomoon';
     font-size: 15px;
     color: #fff;
     display: block;
     transform: rotate(90deg);
+    transition: all 0.3s ease-in-out;
+    position: relative;
 }
+
+.button-top:hover:after {
+	animation: 1s shift;
+}
+
+@keyframes shift {
+	0% {bottom: -30%; opacity: 0;}
+	25% {bottom: 0; opacity: 1;}
+	75% {bottom: 15%; opacity: 1;}
+	100% {bottom: 15%; opacity: 0;}
+}
+
 /*______________________________ Footer __________________________________*/
 #footer {
 	background-color: #3F3836;
@@ -1564,9 +1609,10 @@ h5 {
 .footer__column a {
 	display: block;
 	color: #fff;
+	transition: all 0.3s ease-in-out;
 }
 
-@media (hover: hover) {}
+@media (hover: hover) {
 .footer__column a:hover {
 	color: var(--green);
 }
@@ -1581,6 +1627,10 @@ h5 {
 	column-gap: 8px;
 }
 
+.footer__icons a {
+	transition: all 0.3s ease-in-out;
+}
+
 .icon-facebook,
 .icon-twitter,
 .icon-instagram {
@@ -1588,6 +1638,12 @@ h5 {
 	background-color: var(--red);
 	padding: 16px;
 	border-radius: 100px;
+}
+
+@media (hover: hover) {
+.footer__icons a:hover {
+	translate: 0px, -5px;
+	}
 }
 
 .footer__endline {
@@ -1631,6 +1687,7 @@ h5 {
 
 	.logo {
 		z-index: 1;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.nav {
@@ -1650,6 +1707,7 @@ h5 {
 		border-radius: 50px;
 		z-index: 1;
 		cursor: pointer;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.burger_layer,
@@ -1703,7 +1761,7 @@ h5 {
 	.menu-open .burger:after {
 		position: absolute;
 		width: 26px;
-		transition: all 0.3s;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.menu-open .burger:before,

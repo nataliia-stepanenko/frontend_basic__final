@@ -1628,12 +1628,12 @@ h5 {
 }
 
 @media (hover: hover) {
-.footer__column a:hover {
+.footer__wrapper a:hover {
 	color: var(--green);
 }
 }
 
-.footer__column a:focus {
+.footer__wrapper a:focus {
 	color: var(--green);
 }
 

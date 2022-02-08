@@ -1281,12 +1281,12 @@ h4 {
 
 .one-time .slick-next
 {
-    right: 364px;
+    right: 357px;
 }
 [dir='rtl'] .one-time .slick-next
 {
     right: auto;
-    left: 364px;
+    left: 357px;
 }
 .one-time .slick-next:before
 {

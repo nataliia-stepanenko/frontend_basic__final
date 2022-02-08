@@ -1680,18 +1680,18 @@ h5 {
 	transition: all 0.3s ease-in-out;
 }
 
-.icon-ffacebook,
-.icon-ttwitter,
-.icon-iinstagram {
+.icon-facebook,
+.icon-twitter,
+.icon-instagram {
 	color: #fff;
 	background-color: var(--red);
 	padding: 16px;
 	border-radius: 100px;
 }
 
-.icon-ffacebook,
-.icon-ttwitter,
-.icon-iinstagram {
+.icon-facebook,
+.icon-twitter,
+.icon-instagram {
 	display: inline !important;
 }
 

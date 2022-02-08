@@ -1620,7 +1620,7 @@ h5 {
 
 .footer__menu {
 	width: 100%;
-	min-height: 400px;
+	min-height: 308px;
 	display: flex;
 }
 
@@ -1696,9 +1696,11 @@ h5 {
 
 .footer__endline {
 	width: 100%;
-	min-height: 32px;
+	min-height: 90px;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-end;
+	border-top: 1px solid #494949;
 }
 
 .footer__endline p {

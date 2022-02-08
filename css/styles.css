@@ -1689,9 +1689,9 @@ h5 {
 	border-radius: 100px;
 }
 
-a i.icon-facebook,
-a i.icon-twitter,
-a i.icon-instagram {
+.icon-facebook,
+.icon-twitter,
+.icon-instagram {
 	display: inline !important;
 }
 

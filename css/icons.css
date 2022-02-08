@@ -44,13 +44,13 @@
 .icon-darts:before {
   content: "\e904";
 }
-.icon-facebook:before {
+.icon-blue:before {
   content: "\e905";
 }
 .icon-file:before {
   content: "\e906";
 }
-.icon-instagram:before {
+.icon-pink:before {
   content: "\e907";
 }
 .icon-play:before {
@@ -83,6 +83,6 @@
 .icon-suitcase:before {
   content: "\e911";
 }
-.icon-twitter:before {
+.icon-wing:before {
   content: "\e912";
 }
